@@ -17,6 +17,7 @@ const sectionBanner = document.getElementById('banner')
 const btnKnowMore = document.getElementById('btn__info')
 
 const btnBars = document.getElementById('btnBars')
+const btnContact = document.getElementById('btnContact')
 const btnClose = document.getElementById('btnClose')
 
 const headerDashboard = document.querySelector('.header__dashboard')
@@ -36,7 +37,6 @@ function closeHeaderNav() {
 
 btnBars.addEventListener('click', showHeaderNav)
 btnClose.addEventListener('click', closeHeaderNav)
-
 navAboutMe.forEach((about) => about.addEventListener('click', () =>  navigateTo(sectionAboutMe), false))
 navSkills.forEach((skill) => skill.addEventListener('click', () =>  navigateTo(sectionSkills), false))
 navExperincie.forEach((experien) => experien.addEventListener('click', () =>  navigateTo(sectionExperience), false))
@@ -48,4 +48,5 @@ navBanner.forEach((banner) => banner.addEventListener('click', () => navigateTo(
 
 
 btnKnowMore.addEventListener('click', () => navigateTo(sectionAboutMe), false)
+btnContact.addEventListener('click', () => navigateTo(sectionContact), false)
 
