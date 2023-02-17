@@ -1,0 +1,86 @@
+.experiencie{
+    display: flex;
+    background-color: #d4e7ff;
+    border-top: 2px solid #a5bbd6;
+    border-bottom: 2px solid #a5bbd6;
+    justify-content: center;
+    flex-direction: column;
+    padding: 4rem 0; 
+    gap: 1rem;
+}
+
+.experiencie__container_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experiencie__title {
+    font-size: 2rem;
+    color: #244276;
+    text-align: center;
+    margin: 0;
+}
+
+.experiencie__description {
+    text-align: center;
+    width: 45vw;
+}
+
+.experencie__img {
+    width: 400px;
+}
+
+.experiencie__list{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.experinecie__list-items {
+    background-color: #305CA7;
+    padding: 1rem 1.4rem;
+    cursor: pointer;
+    border: 2px solid #78a8e7;
+    border-radius: 6px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.items__date{
+    color: #78a8e7;
+    font-weight: 600;
+    border-bottom: 1px solid #78a8e7;
+    padding-bottom: 10px;
+}
+
+.items__position{
+    color: #d4e7ff;
+    font-size: 1.2rem;
+}
+
+.items__tecnology{
+    color: #78a8e7;
+    font-weight: 600;
+}
+
+.items__description {
+    color: #d4e7ff;
+    width: 22vw;
+}
+
+.experinecie__list-items:hover {
+    transform: translateY(-2px);
+}
+
+
+
+@media (max-width: 640px) {
+    .experiencie__list{
+        flex-direction: column;
+    }
+
+    .items__description{
+        width: 100%;
+    }
+}

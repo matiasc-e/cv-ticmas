@@ -1,0 +1,120 @@
+.header{
+    position: fixed;
+    width: 100%;
+    background-image: linear-gradient(90deg, #1e3c72 10%, #2a5298 90%);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    align-items: center;
+    z-index: 1;
+}
+
+.header__list {
+    display: flex;
+    gap: 2rem;
+    margin-right: 4rem;
+    list-style: none;
+}
+
+.header__logo {
+    margin-left: 4rem;
+    color: #fff;
+}
+
+.header__logo > i {
+    color: rgb(100, 134, 226);
+}
+
+.list__item{
+    color: #bfc6f1;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.list__item:hover{
+    color: #fff;
+}
+
+.header__bars{
+    display: none;
+}
+/* 
+Dashboard Para Mobile */
+
+.dashboard__list{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 0.4rem;
+    align-items: center;
+    list-style: none;
+    color: #bfc6f1;
+    cursor: pointer;
+}
+
+.list__item-dashboard{
+    padding: 1.6rem 0;
+    width: 100%;
+    text-align: center;
+}
+
+.list__item-dashboard:hover{
+    background-color: #2a529875;
+}
+
+.header__dashboard_img{
+    text-align: center;
+    color: #bfc6f1;
+}
+
+.dashboard__close{
+    font-size: 2rem;
+    position: absolute;
+    right: 1.4rem;
+    top: 1rem;
+    cursor: pointer;
+    color: #bfc6f1;
+}
+
+.header__dashboard{
+    background-image: linear-gradient(90deg, #1e3c72 10%, #2a5298 90%);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    z-index: 2;
+    display: none;
+}
+
+
+
+@media (max-width: 640px) {
+    .header__list {
+        display: none;
+    }
+
+    .header__bars {
+        display: block;
+        margin-right: 3rem;
+        font-size: 2rem;
+        color: #bfc6f1;
+        cursor: pointer;
+    }
+
+    .header__dashboard{
+        display: none;
+        opacity: 0;
+    }
+
+    .showNav{
+        display: block;
+        opacity: 1;
+        transition: all 0.3s ease-in-out;
+    }
+}

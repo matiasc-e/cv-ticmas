@@ -1,0 +1,79 @@
+.skills {
+    display: flex;
+    padding: 4rem 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+.skills__title{
+    margin: 0;
+    text-align: center;
+    font-size: 2.4rem;
+    color: #bfc6f1;
+}
+
+.skills__description{
+    color: #bfc6f1;
+}
+
+.skills__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    text-align: center;
+}
+
+.skills__list-items {
+    background-color: #305CA7;
+    padding: 1rem 0.4rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.6rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.animate {
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.animateBottom {
+    animation: bottomAnimation 1s;
+}
+
+.skills__list-items > i {
+    font-size: 3rem;
+    color: #bfc6f1;
+}
+
+.items__tecnology {
+    font-size: 1.1rem;
+    color: #bfc6f1;
+    margin: 0;
+}
+
+.skills__list-items:hover {
+    transform: scale(1.04);
+}
+
+@keyframes bottomAnimation {
+    0% {
+        transform: translateY(100px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 640px) {
+    .skills__list{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0;
+        gap: 0.3rem;
+
+    }
+}
